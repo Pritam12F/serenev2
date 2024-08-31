@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export const Navbar = () => {
   return (
-    <nav className="flex bg-deepnavy-400 p-2 justify-between items-center sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-80">
+    <nav className="flex bg-gray9-400 p-2 justify-between items-center sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-85">
       <div className="w-12 h-12 mx-2">
         <svg
           viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ export const Navbar = () => {
           </g>
         </svg>
       </div>
-      <Button variant={"secondary"} className="w-32 mx-3 bg-neutral-200">
+      <Button variant={"secondary"} className="w-32 mx-3 bg-gray1-400">
         Log in
       </Button>
     </nav>

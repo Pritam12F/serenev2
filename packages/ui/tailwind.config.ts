@@ -54,17 +54,32 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        deepnavy: {
-          400: "#0C1821",
+        gray1: {
+          400: "#F8F9FA",
         },
-        navy: {
-          400: "#1B2A41",
+        gray2: {
+          400: "#E9ECEF",
         },
-        lightnavy: {
-          400: "#324A5F",
+        gray3: {
+          400: "#DEE2E6",
         },
-        customgray: {
-          400: "#CCC9DC",
+        gray4: {
+          400: "#CED4DA",
+        },
+        gray5: {
+          400: "#ADB5BD",
+        },
+        gray6: {
+          400: "#6C757D",
+        },
+        gray7: {
+          400: "#495057",
+        },
+        gray8: {
+          400: "#343A40",
+        },
+        gray9: {
+          400: "#212529",
         },
       },
       borderRadius: {

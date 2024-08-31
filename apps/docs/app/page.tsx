@@ -1,4 +1,5 @@
 import { Background } from "@repo/ui/components/background-collision";
+import { Footer } from "@repo/ui/components/footer";
 import WordPullUp from "@repo/ui/components/magicui/word-pullup";
 import { Navbar } from "@repo/ui/components/navbar";
 
@@ -13,6 +14,7 @@ export default function Page() {
         />
       </div>
       <Background />
+      <Footer />
     </main>
   );
 }

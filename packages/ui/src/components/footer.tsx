@@ -1,3 +1,5 @@
+import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
+
 export const Footer = () => {
   return (
     <div className="flex justify-between bg-neutral-100 dark:bg-gray9-400">
@@ -5,7 +7,7 @@ export const Footer = () => {
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12"
+        className="h-12 w-12 mx-4 my-3"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
@@ -24,16 +26,20 @@ export const Footer = () => {
           ></path>{" "}
         </g>
       </svg>
-      <div className="flex space-x-32 mx-48">
-        <div>
+      <div className="flex space-x-10 mx-8 md:mx-48 md:space-x-10 lg:mx-48 lg:space-x-24">
+        <div className="p-4 space-y-2">
           <h3 className="font-semibold">Useful links</h3>
           <div>Github</div>
           <div>Terms & Conditions</div>
           <div>Privacy Policy</div>
         </div>
-        <div className="font-semibold">
-          <h3>Follow us</h3>
-          <div></div>
+        <div className="p-4 space-y-2">
+          <h3 className="font-semibold">Follow us</h3>
+          <div className="flex justify-between space-x-4">
+            <FaDiscord className="w-5 h-5" />
+            <FaGithub className="w-5 h-5" />
+            <FaTwitter className="w-5 h-5" />
+          </div>
         </div>
       </div>
     </div>

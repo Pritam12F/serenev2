@@ -1,5 +1,3 @@
-import { FaBeer } from "react-icons/fa";
-
 export const Footer = () => {
   return (
     <div className="flex justify-between bg-neutral-100 dark:bg-gray9-400">

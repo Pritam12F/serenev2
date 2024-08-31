@@ -81,6 +81,9 @@ const config = {
         gray9: {
           400: "#212529",
         },
+        customred: {
+          400: "#c24644",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

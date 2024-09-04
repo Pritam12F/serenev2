@@ -1,13 +1,15 @@
 import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="flex justify-between bg-neutral-100 dark:bg-gray9-400">
+    <div className="flex py-3 justify-between bg-neutral-100 dark:bg-gray9-400">
       <svg
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 mx-4 my-3"
+        className="h-12 w-12 mx-4 md:mx-5 lg:mx-8 my-3"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
@@ -26,19 +28,27 @@ export const Footer = () => {
           ></path>{" "}
         </g>
       </svg>
-      <div className="flex space-x-10 mx-8 md:mx-48 md:space-x-10 lg:mx-48 lg:space-x-24">
-        <div className="p-4 space-y-2">
-          <h3 className="font-semibold">Useful links</h3>
-          <div>Github</div>
-          <div>Terms & Conditions</div>
-          <div>Privacy Policy</div>
+      <div className="flex px-4 min-[430px]:space-x-8 min-[500px]:space-x-16 sm:space-x-32 sm:mx-5 md:space-x-48 lg:space-x-72 lg:mx-20">
+        <div className="flex flex-col">
+          <h3 className="font-semibold ml-4">Useful links</h3>
+          <div className="flex flex-col items-start -space-y-1.5">
+            <Button variant={"link"}>Github</Button>
+            <Button variant={"link"}>Terms & Conditions</Button>
+            <Button variant={"link"}>Privacy Policy</Button>
+          </div>
         </div>
-        <div className="p-4 space-y-2">
+        <div className="flex flex-col">
           <h3 className="font-semibold">Follow us</h3>
-          <div className="flex justify-between space-x-4">
-            <FaDiscord className="w-5 h-5" />
-            <FaGithub className="w-5 h-5" />
-            <FaTwitter className="w-5 h-5" />
+          <div className="flex space-x-4 lg:space-x-8 mt-2">
+            <Link href={"#"}>
+              <FaDiscord className="w-5 h-5" />
+            </Link>
+            <Link href={"https://github.com/Pritam12F"}>
+              <FaGithub className="w-5 h-5" />
+            </Link>
+            <Link href={"https://twitter.com/pritam121f"}>
+              <FaTwitter className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </div>

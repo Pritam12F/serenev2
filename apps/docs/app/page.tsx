@@ -15,7 +15,6 @@ export default function Page() {
       </div>
       <Background />
       <Footer />
-      {/* {Hithere} */}
     </main>
   );
 }

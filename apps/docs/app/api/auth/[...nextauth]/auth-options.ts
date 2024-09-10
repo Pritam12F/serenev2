@@ -39,6 +39,11 @@ export const authOptions = {
       clientSecret: process.env.GITHUB_SECRET!,
     }),
   ],
+  pages: {
+    signIn: "/signin",
+    signOut: "/signout",
+    error: "/error",
+  },
   callbacks: {
     async session({ session, token }) {
       if (token) {

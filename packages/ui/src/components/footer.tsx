@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="flex py-3 justify-between bg-neutral-100 dark:bg-gray9-400">
+    <div className="flex py-3 w-full justify-between bg-neutral-100 dark:bg-gray9-400">
       <svg
         viewBox="0 0 24 24"
         fill="none"

@@ -8,7 +8,8 @@
   },
   "peerDependencies": {
     "next": "14.2.4",
-    "react": "^18"
+    "react": "^18",
+    "@clerk/nextjs": "^5.5.4"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

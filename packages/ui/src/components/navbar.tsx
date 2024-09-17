@@ -1,6 +1,11 @@
+"use client";
+
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
+  const router = useRouter();
+
   return (
     <nav className="flex bg-gray9-400 p-2 justify-between items-center sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-85">
       <div className="w-12 h-12 mx-2">
@@ -28,9 +33,26 @@ export const Navbar = () => {
           </g>
         </svg>
       </div>
-      <Button variant={"secondary"} className="w-32 mx-3 bg-gray1-400">
-        Log in
-      </Button>
+      <div>
+        <Button
+          variant={"secondary"}
+          className="w-32 mx-3 bg-gray1-400"
+          onClick={() => {
+            router.push("/sign-in");
+          }}
+        >
+          Log in
+        </Button>
+        <Button
+          variant={"secondary"}
+          className="w-32 mx-3 bg-gray6-400 text-white hover:bg-gray8-400 hover:border-2"
+          onClick={() => {
+            router.push("/sign-up");
+          }}
+        >
+          Join now
+        </Button>
+      </div>
     </nav>
   );
 };

@@ -1,12 +1,9 @@
 "use client";
 
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export const Navbar = () => {
-  const router = useRouter();
-
   return (
     <nav className="flex bg-gray9-400 p-2 justify-between items-center sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-85">
       <div className="w-12 h-12 mx-2">
@@ -35,19 +32,15 @@ export const Navbar = () => {
         </svg>
       </div>
       <div>
-        <SignInButton>
-          <Button variant={"secondary"} className="w-32 mx-3 bg-gray1-400">
-            Log in
-          </Button>
-        </SignInButton>
-        <SignUpButton>
-          <Button
-            variant={"secondary"}
-            className="w-32 mx-3 bg-gray6-400 text-white hover:bg-gray8-400 hover:border-2"
-          >
-            Join now
-          </Button>
-        </SignUpButton>
+        <Button variant={"secondary"} className="w-32 mx-3 bg-gray1-400">
+          <Link href={"/sign-in"}>Log in</Link>
+        </Button>
+        <Button
+          variant={"secondary"}
+          className="w-32 mx-3 bg-gray6-400 text-white hover:bg-gray8-400 hover:border-2"
+        >
+          <Link href={"/sign-up"}>Join now</Link>
+        </Button>
       </div>
     </nav>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 
@@ -34,24 +35,19 @@ export const Navbar = () => {
         </svg>
       </div>
       <div>
-        <Button
-          variant={"secondary"}
-          className="w-32 mx-3 bg-gray1-400"
-          onClick={() => {
-            router.push("/sign-in");
-          }}
-        >
-          Log in
-        </Button>
-        <Button
-          variant={"secondary"}
-          className="w-32 mx-3 bg-gray6-400 text-white hover:bg-gray8-400 hover:border-2"
-          onClick={() => {
-            router.push("/sign-up");
-          }}
-        >
-          Join now
-        </Button>
+        <SignInButton>
+          <Button variant={"secondary"} className="w-32 mx-3 bg-gray1-400">
+            Log in
+          </Button>
+        </SignInButton>
+        <SignUpButton>
+          <Button
+            variant={"secondary"}
+            className="w-32 mx-3 bg-gray6-400 text-white hover:bg-gray8-400 hover:border-2"
+          >
+            Join now
+          </Button>
+        </SignUpButton>
       </div>
     </nav>
   );

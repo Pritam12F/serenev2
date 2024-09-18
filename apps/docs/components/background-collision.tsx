@@ -1,5 +1,5 @@
-import { BackgroundBeamsWithCollision } from "./aceternityui/background-beams";
-import ShimmerButton from "./magicui/shimmer-button";
+import { BackgroundBeamsWithCollision } from "@repo/ui/components/aceternityui/background-beams";
+import ShimmerButton from "@repo/ui/components/magicui/shimmer-button";
 
 export const Background = () => {
   return (

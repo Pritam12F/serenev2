@@ -1,6 +1,6 @@
 import { Background } from "./background-collision";
 import { Footer } from "./footer";
-import WordPullUp from "./magicui/word-pullup";
+import WordPullUp from "@repo/ui/components/magicui/word-pullup";
 
 export const Landing = () => {
   return (

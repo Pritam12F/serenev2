@@ -1,5 +1,5 @@
 import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
-import { Button } from "./ui/button";
+import { Button } from "@repo/ui/components/ui/button";
 import Link from "next/link";
 
 export const Footer = () => {

@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
-import { Landing } from "@repo/ui/components/landing";
-import { Navbar } from "@repo/ui/components/navbar";
+import { Landing } from "~/components/landing";
+import { Navbar } from "~/components/navbar";
 
 // export const dynamic = "force-dynamic";
 

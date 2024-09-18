@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "./ui/button";
-import Link from "next/link";
+import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import { Button } from "@repo/ui/components/ui/button";
 
 export const Navbar = () => {
   return (
@@ -33,13 +33,13 @@ export const Navbar = () => {
       </div>
       <div>
         <Button variant={"secondary"} className="w-32 mx-3 bg-gray1-400">
-          <Link href={"/sign-in"}>Log in</Link>
+          <SignInButton />
         </Button>
         <Button
           variant={"secondary"}
           className="w-32 mx-3 bg-gray6-400 text-white hover:bg-gray8-400 hover:border-2"
         >
-          <Link href={"/sign-up"}>Join now</Link>
+          <SignUpButton />
         </Button>
       </div>
     </nav>

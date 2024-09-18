@@ -4,8 +4,6 @@ import { Navbar } from "@repo/ui/components/navbar";
 
 // export const dynamic = "force-dynamic";
 
-export const runtime = "edge";
-
 export default function Page() {
   return (
     <main>

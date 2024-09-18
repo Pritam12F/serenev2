@@ -1,4 +1,3 @@
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Landing } from "~/components/landing";
 import { Navbar } from "~/components/navbar";
 
@@ -7,13 +6,8 @@ import { Navbar } from "~/components/navbar";
 export default function Page() {
   return (
     <main>
-      <SignedOut>
-        <Navbar />
-        <Landing />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+      <Navbar />
+      <Landing />
     </main>
   );
 }

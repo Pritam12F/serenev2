@@ -9,7 +9,6 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.5.4",
     "@repo/db": "workspace:*",
     "@repo/ui": "workspace:*",
     "bcrypt": "^5.1.1",
